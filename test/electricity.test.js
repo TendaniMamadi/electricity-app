@@ -109,6 +109,7 @@ describe("The buy electricity app", function () {
         const electricity = Electricity();
 
         electricity.topUpElectricity(50);
+     
         assert.isTrue(electricity.useAppliance('TV'));
         assert.isTrue(electricity.useAppliance('Kettle'));
 
