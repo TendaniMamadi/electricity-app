@@ -81,6 +81,6 @@ function useBtnClick() {
 
 
     appliancesElement.innerHTML = electricity.useAppliance()
-
+    totalUnitsAvailable.innerHTML = electricity.getUnitsAvailable().toFixed(2)
 }
 useButton.addEventListener("click", useBtnClick)

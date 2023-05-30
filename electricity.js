@@ -11,6 +11,7 @@ function Electricity() {
     var unitsAvailable = 0;
     var totalAmount = 0;
     var totalUnits = 0;
+ 
 
     function topUpElectricity(amount) {
         //units bought are equal to amount
@@ -59,10 +60,14 @@ function Electricity() {
             unitsAvailable -= appliances.TV
             return true;
         }
+        else{
+            return false;
+        }
     }
 
     function advanceTaken() {
         //conditional function that allows user to buy electricity on credit 
+       
     }
 
     function totalAmountSpent() {
